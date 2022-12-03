@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+       body{
+            background-image:url(https://www.wallpaperflare.com/static/712/605/64/blue-iris-iris-flower-close-up-photography-iris-flower-wallpaper.jpg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            background-attachment: fixed;
+            box-shadow: 0vmin;
+           
+        }
+        
+        </style>
+ <body style="color:yellow;">
+     IRIS FLOWER DETECTION  
+    </p>   <br>
+        
+    <form method="POST", action="{{url_for('get_result')}}">
+       <b> sepal_length :  <input type="text", name='sepal_length', placeholder="enter number" > <br><br>
+        sepal_width :  <input type="text", name='sepal_width', placeholder="enter number"> <br><br>
+        petal_length :  <input type="text", name='petal_length', placeholder="enter number"> <br><br>
+        petal_width : <input type="text", name='petal_width', placeholder="enter number"> <br><br><br></b>
+        <input type="submit" , value='predict!'> 
+    </form>
+
+    <img src=:"" alt="">
+    
+ </body>
+
+
+</html>
